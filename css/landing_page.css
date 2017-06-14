@@ -1,0 +1,93 @@
+/* MyCV is a responsive personal business card template
+Here is the content of this css file
+
+- Main Wrapper
+	- Loader
+	- Color Setting
+	- Main Menu
+	- Personal Info Image	
+	- Personal Info
+	- Main Content
+		- Home
+		- About
+		- My Skills
+			- Boxs
+			- Bars
+			- Languages
+			- Numbers
+		- Experiences
+		- My projects
+			- Portfolio
+		- Contact
+	- Popup
+		
+*/
+
+/* Wrapper */
+.lx-wrapper{
+	display:flex;
+	overflow:auto;
+	background:rgba(0,0,0,0.7);
+}
+
+/* Loader */
+.lx-loader{
+	display:flex;
+	align-items:center;
+    justify-content:center;
+	position:fixed;
+	z-index:20;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	font-size:20px;
+	font-family:'Roboto Slab';
+	text-align:center;
+	background:#121212;
+	color:#FFFFFF;
+}
+
+/* Description */
+.lx-description{
+	margin:50px 0px;
+	text-align:center;
+	color:#FFFFFF;
+}
+.lx-description h1{
+	font-size:60px;
+	font-family:'Roboto Slab';
+	line-height:100px;
+}
+.lx-description h4{
+	font-size:20px;
+}
+.lx-description p{
+	color:#FFFFFF;
+}
+
+/* Screenshots */
+.lx-screenshots{
+
+}
+.lx-screenshots h2{
+	padding:30px 20px 0px;
+	font-size:30px;
+	text-align:center;
+	color:#FFFFFF;
+}
+.lx-screenshots h2 span{
+	color:#1486b5;
+}
+.lx-screenshot{
+	text-align:center;
+}
+.lx-screenshot a{
+	font-size:16px;
+	color:#FFFFFF;
+}
+.lx-screenshot a img{
+	display:block;
+	width:100%;
+	box-shadow:0px 0px 10px #000000;
+}
