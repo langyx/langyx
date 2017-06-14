@@ -74,7 +74,7 @@ function vidRescale(){
 
 	if (w/h > 16/9){
 		tv.setSize(w, w/16*9);
-		$('.lx-youtube-background .lx-youtube-screen').css({'left': '0px'});
+		$('.lx-youtube-background .lx-youtube-screen').css({'left': '10px'});
 	} else {
 		tv.setSize(h/9*16, h);
 		$('.lx-youtube-background .lx-youtube-screen').css({'left': -($('.lx-youtube-background .lx-youtube-screen').outerWidth()-w)/2});
