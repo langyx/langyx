@@ -8,8 +8,13 @@ $(window).on("load", function() {
     return false;
 });
 
+function hideLoadScreen() {
+
+    $(".lx-loader", ".lx-wrapper").fadeOut();
+}
+
 $(document).on("ready", function() {
-	
+
 	// Set body background
 	$("body").css({"background":$(".lx-wrapper").attr("data-background-color")+" url('"+$(".lx-wrapper").attr("data-background")+"') no-repeat center center fixed","background-size":"cover"});
 	

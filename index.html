@@ -22,7 +22,7 @@
 	</head>
 	<body>
 
-		<!-- Youtube Background -->
+		<!-- Youtube Background
 		<div class="lx-youtube-background">
 			<div class="lx-youtube-screen" id="tv" data-video-id="F-fB5xPQIMU" data-video-start-from="0" data-video-end-to="46"></div>
 		</div>
@@ -37,6 +37,10 @@
 				<img src="images/ring.svg" alt="Loading" />
 			</div>
 			<!-- End Loader -->
+
+			<video id="bgvid" playsinline autoplay muted loop onloadeddata="hideLoadScreen()">
+				<source src="./images/bg_loop.mp4" type="video/mp4">
+			</video>
 
 			<!-- Copyright -->
 			<div class="lx-copyright">
@@ -670,7 +674,7 @@
 		<script src="js/jquery-1.12.4.min.js"></script>
 		<!-- Popup Script -->
 		<script src="js/jquery.popup.js"></script>
-		<!-- Youtube Background Script -->
+		<!-- Youtube Background Script
 		<script src="js/jquery.youtube.player.js"></script>
 		<!-- Main Script -->
 		<script src="js/script.js"></script>

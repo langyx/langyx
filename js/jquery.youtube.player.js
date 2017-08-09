@@ -12,7 +12,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 // Configure the player
 var tv,
     playerDefaults = {
-        autoplay: 0,
+        autoplay: 1,
         autohide: 1,
         modestbranding: 0,
         rel: 0,
