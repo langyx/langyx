@@ -1,6 +1,8 @@
 // Strict Mode
 "use strict";
 
+
+
 // Windows load event
 $(window).on("load", function() {
     // Loader Fade Out
@@ -8,14 +10,17 @@ $(window).on("load", function() {
     return false;
 });
 
-function hideLoadScreen() {
-
-    $(".lx-loader", ".lx-wrapper").fadeOut();
-}
 
 $(document).on("ready", function() {
 
-	// Set body background
+
+    function hideLoadScreen() {
+
+        $(".lx-loader", ".lx-wrapper").fadeOut();
+    }
+
+
+    // Set body background
 	$("body").css({"background":$(".lx-wrapper").attr("data-background-color")+" url('"+$(".lx-wrapper").attr("data-background")+"') no-repeat center center fixed","background-size":"cover"});
 	
 	// Resize home and content blocs
