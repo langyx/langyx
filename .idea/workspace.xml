@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c78d09-292b-4d98-83e5-f37780fe772c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/en.html" afterPath="$PROJECT_DIR$/en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/es.html" afterPath="$PROJECT_DIR$/es.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="40c78d09-292b-4d98-83e5-f37780fe772c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -390,12 +386,12 @@
       <workItem from="1502931906752" duration="16000" />
       <workItem from="1504138469217" duration="29000" />
       <workItem from="1508261937907" duration="970000" />
-      <workItem from="1512402745938" duration="8657000" />
+      <workItem from="1512402745938" duration="8974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36200000" />
+    <option name="totallyTimeSpent" value="36517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="990" extended-state="6" />
