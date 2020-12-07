@@ -10,20 +10,6 @@
     box-sizing: border-box;
 }
 
-body{ height:100vh; margin:0; }
-
-header{ min-height:50px;}
-footer{ min-height:50px;}
-
-body{
-  display:flex;
-  flex-direction:column;
-}
-
-footer{
-  margin-top:auto;
-}
-
 body {
     background: #fff;
     color: #000;
@@ -140,6 +126,7 @@ a {
 
 .content {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .browse-all {
@@ -182,4 +169,6 @@ footer {
     }
 }
 
-img[alt*=Screen] { width: 30%; }
+img[alt*=Screen] {
+    width: 35%;
+}
