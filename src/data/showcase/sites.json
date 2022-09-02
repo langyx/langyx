@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Apple Foundation Program",
+    "image": "src/data/showcase/images/sc-afp.png",
+    "url": "#"
+  },
+  {
+    "title": "Open Source - Github",
+    "image": "src/data/showcase/images/sc-os.png",
+    "url": "https://github.com/langyx"
+  },
+  {
+    "title": "Swift Team",
+    "image": "src/data/showcase/images/sc-st.png",
+    "url": "#"
+  },
+  {
+    "title": "Dumby - iOS App",
+    "image": "src/data/showcase/images/sc-dbm.png",
+    "url": "#"
+  },
+  {
+    "title": "Who Said ? - iOS App",
+    "image": "src/data/showcase/images/sc-ws.png",
+    "url": "#"
+  },
+  {
+    "title": "Mims - iOS App",
+    "image": "src/data/showcase/images/sc-mim.png",
+    "url": "#"
+  }
+]

@@ -1,0 +1,120 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import CompatibilityList from "~/components/compatibility-list.astro";
+
+const frameworks = [
+  {
+    title: "Combine",
+    icon: "healthicons:c",
+    url: "",
+  },
+  {
+    title: "CoreML",
+    icon: "ri:stackshare-line",
+    url: "",
+  },
+  {
+    
+    title: "ARKit",
+    icon: "eos-icons:augmented-reality",
+    url: "",
+  },
+  {
+    title: "Vision",
+    icon: "bi:person-bounding-box",
+    url: "",
+  },
+  {
+    title: "AVKit",
+    icon: "clarity:play-solid",
+    url: "",
+  },
+  {
+    title: "CoreData",
+    icon: "fa:database",
+    url: "",
+  },
+  {
+    title: "WidgetKit",
+    icon: "ic:round-widgets",
+    url: "",
+  },
+  {
+    title: "MapKit",
+    icon: "clarity:map-solid",
+    url: "",
+  },
+  {
+    title: "StoreKit",
+    icon: "bi:bag-check-fill",
+    url: "",
+  },
+  {
+    title: "WatchKit",
+    icon: "ion:watch",
+    url: "",
+  },
+  {
+    title: "App Clips",
+    icon: "ic:baseline-extension",
+    url: "",
+  },
+  {
+    title: "CloudKit",
+    icon: "bi:cloud-arrow-up-fill",
+    url: "",
+  },
+];
+
+const platforms = [
+  {
+    title: "Swift",
+    icon: "cib:swift",
+    url: "",
+  },
+  {
+    title: "SwiftUI",
+    icon: "iconoir:apple-swift",
+    url: "",
+  },
+  {
+    title: "Vapor",
+    icon: "simple-icons:vapor",
+    url: "",
+  },
+  {
+    title: "Solidity",
+    icon: "file-icons:solidity",
+    url: "",
+  },
+  {
+    title: "C++",
+    icon: "gg:c-plus-plus",
+    url: "",
+  },
+  {
+    title: "SQL",
+    icon: "simple-icons:mysql",
+    url: "",
+  },
+];
+---
+
+<ContentSection title="Technologies" id="technologies">
+  <Fragment slot="lead">
+    Utilisation de technologies <span class="text-primary">de pointes et novatrices</span>
+    comme la <span class="text-secondary">réalité augmentée</span>,
+    le <span class="text-secondary">machine learning</span>
+    ou encore la <span class="text-secondary">blockchain Ethereum</span> et plus encore.
+  </Fragment>
+  <CompatibilityList
+    title="Technologies"
+    data={platforms}
+    url=""
+  />
+  <CompatibilityList
+    title="Apple Frameworks"
+    data={frameworks}
+    url="https://docs.astro.build/core-concepts/framework-components/"
+  />
+</ContentSection>
