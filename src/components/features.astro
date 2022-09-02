@@ -1,0 +1,43 @@
+---
+import ContentSection from "~/components/content-section.astro";
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Développement",
+    description:
+      "Prise en charge du développement, sur mesure, à toutes les étapes du projet.\nMise à jour et maintenance.\nSuivi des bonnes pratiques de conceptions UI/UX.",
+    icon: "simple-icons:appstore",
+  },
+  {
+    title: "Formation",
+    description:
+      "Individuel ou de groupe à tout niveau de complexité technique.\nThématiques: application Swift, SwiftUI, Vapor backend API, Web3 DApp ou technologie à la demande.",
+    icon: "bi:mortarboard-fill",
+  },
+  {
+    title: "Accompagnement",
+    description: "Mission de consulting: expertise iOS Swift/SwiftUI\nCoaching et mentoring sur mesure en fonction des objetcifs.",
+      icon: "bi:people-fill",
+  },
+];
+---
+
+<ContentSection title="Activités" id="activities">
+  <Fragment slot="lead">
+    Spécialisé dans le développement d'<span class="text-primary">applications iOS</span> sécurisées, <span class="text-secondary">robustes et maintenables</span>.
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 p-6 border border-default bg-offset">
+          <div class="w-16 h-16 p-3 border-2 border-current rounded-full">
+            <Icon name={icon} />
+          </div>
+          <p class="text-xl font-extrabold text-center">{title}</p>
+          <p class="text-sm text-center text-offset whitespace-pre-line">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>
