@@ -32,7 +32,7 @@ const placeholder = await generatePlaceholder(image, {
         src={png[0].url}
         width={png[0].width}
         height={png[0].height}
-        loading="lazy"
+        loading="eager"
         decoding="async"
         onload="this.style.backgroundImage='none'"
         style={`background-image: url(${placeholder.dataURI});`}
