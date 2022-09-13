@@ -12,6 +12,7 @@
     "clean": "rimraf dist node_modules"
   },
   "devDependencies": {
+    "@astrojs/partytown": "^1.0.0",
     "@astrojs/tailwind": "^1.0.0",
     "@types/micromodal": "^0.3.3",
     "astro": "^1.0.1",

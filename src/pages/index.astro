@@ -11,82 +11,96 @@ import "~/styles/index.css";
 const { site } = Astro;
 const image = new URL("social.png", site);
 const description =
-  "Développeur passioné et formateur certifié par Apple dans le développement d’application avec Swift.";
+"Développeur passioné et formateur certifié par Apple dans le développement d’application avec Swift.";
 ---
 
 <html lang="fr" class="h-full motion-safe:scroll-smooth" data-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-
-    <title>Yannis Lang | Expert iOS, Développeur Swift, Formateur</title>
-    <meta name="description" content={description} />
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  
+  <title>Yannis Lang | Expert iOS, Développeur Swift, Formateur</title>
+  <meta name="description" content={description} />
+  
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+  />
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+  media="print"
+  onload="this.media='all'"
+  />
+  <noscript>
     <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
-      />
-    </noscript>
-
-    <!-- social media -->
-    <meta property="og:title" content="Yannis Lang" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
-    <meta property="og:url" content={site} />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <!-- initialize theme -->
-    <script is:inline>
-      const themeSaved = localStorage.getItem("theme");
-
-      if (themeSaved) {
-        document.documentElement.dataset.theme = themeSaved;
-      } else {
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
-        document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
+  </noscript>
+  
+  <!-- social media -->
+  <meta property="og:title" content="Yannis Lang" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={image} />
+  <meta property="og:url" content={site} />
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <!-- initialize theme -->
+  <script is:inline>
+    const themeSaved = localStorage.getItem("theme");
+    
+    if (themeSaved) {
+      document.documentElement.dataset.theme = themeSaved;
+    } else {
+      const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+      ).matches;
+      document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
+    }
+    
+    window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", (event) => {
+      if (!localStorage.getItem("theme")) {
+        document.documentElement.dataset.theme = event.matches
+        ? "dark"
+        : "light";
       }
-
-      window
-        .matchMedia("(prefers-color-scheme: dark)")
-        .addEventListener("change", (event) => {
-          if (!localStorage.getItem("theme")) {
-            document.documentElement.dataset.theme = event.matches
-              ? "dark"
-              : "light";
-          }
-        });
-    </script>
-  </head>
-  <body
-    class="h-full overflow-x-hidden text-base bg-default text-default selection:bg-secondary selection:text-white"
-  >
-    <Header />
-    <Splash />
-    <div class="px-8 py-32 space-y-24">
-      <Intro />
-      <Features />
-      <Compatibility />
-      <Showcase />
-    </div>
-    <Footer />
-  </body>
+    });
+  </script>
+  
+  <!-- google analytics -->
+  <script
+  type="text/partytown"
+  src="https://www.googletagmanager.com/gtag/js?id=G-LWM1FZMDW6"
+  ></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-LWM1FZMDW6");
+  </script>
+</head>
+<body
+class="h-full overflow-x-hidden text-base bg-default text-default selection:bg-secondary selection:text-white"
+>
+<Header />
+<Splash />
+<div class="px-8 py-32 space-y-24">
+  <Intro />
+  <Features />
+  <Compatibility />
+  <Showcase />
+</div>
+<Footer />
+</body>
 </html>
