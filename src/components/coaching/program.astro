@@ -17,7 +17,6 @@ import program from "~/data/coaching/program.json";
             class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-6xl"
         >
             {
-                
                 program.map((data, index) => (
                     <ProgramSection data={data} left={index % 2 != 0} />
                 ))
