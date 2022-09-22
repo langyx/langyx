@@ -22,7 +22,7 @@ const placeholder = await generatePlaceholder(image, {
 ---
 
 <a class="group aspect-video hover:!text-default" href={url}>
-  <figure class="relative w-full h-full overflow-hidden">
+  <figure class="relative w-full h-full overflow-hidden rounded shadow border-2 border-default">
     <picture>
       <source type="image/avif" srcset={avifSrcset} {sizes} />
       <source type="image/webp" srcset={webpSrcset} {sizes} />
