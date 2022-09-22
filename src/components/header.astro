@@ -7,11 +7,20 @@ const navItems = [
   { title: "Technologies", url: "#technologies" },
   { title: "Projets", url: "#projets" },
 ];
+
+export interface Props {
+  isTop?: boolean;
+}
+
+const { isTop = false } = Astro.props;
 ---
 
 <header
   id="page-header"
-  class="absolute bottom-0 z-10 flex items-center justify-between w-full px-8 py-4 text-white border-b border-transparent"
+  class:list={[
+    "absolute bottom-0 z-10 flex items-center justify-between w-full px-8 py-4 text-white border-b border-transparent",
+    { "fixed-header": isTop, "isTop-fixed-header": isTop },
+  ]}
 >
   <a class="flex items-center gap-3 hover:!text-default" href="#">
     <h1 class="sr-only">Yannis Lang</h1>
@@ -100,10 +109,14 @@ const navItems = [
   openNavButton.addEventListener("click", openMenu);
   closeNavButton.addEventListener("click", closeMenu);
 
-  document.addEventListener("scroll", () => {
+
+  if (!header.classList.contains("fixed-header")) {
+    document.addEventListener("scroll", () => {
     const d = page.clientHeight - page.scrollTop - header.offsetHeight;
     header.classList.toggle("fixed-header", d < 0);
   });
+  }
+  
 
   menu.addEventListener("click", (event) => {
     if ((event.target as HTMLElement).tagName === "A") {

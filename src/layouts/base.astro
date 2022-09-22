@@ -1,0 +1,26 @@
+---
+import "~/styles/index.css";
+
+import Footer from "~/components/footer.astro";
+
+import BaseHead from "../components/head/BaseHead.astro";
+import Header from "../components/header.astro";
+import type { Props as BaseHeadProps } from "../components/head/BaseHead.astro";
+export interface Props {
+  seo?: BaseHeadProps;
+}
+const { seo } = Astro.props;
+---
+
+<html lang="fr">
+  <head>
+    <BaseHead {...seo} />
+  </head>
+  <body
+    class="h-full overflow-x-hidden text-base bg-default text-default selection:bg-secondary selection:text-white"
+  >
+    <Header isTop={true} />
+    <slot />
+    <Footer />
+  </body>
+</html>

@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
+        tertiary:  "var(--color-tertiary)",
       },
       textColor: {
         default: "var(--color-text)",
@@ -27,8 +28,5 @@ module.exports = {
   corePlugins: {
     fontSize: false,
   },
-  plugins: [require("tailwindcss-fluid-type"), require("daisyui")],
-  daisyui: {
-    themes: [],
-  },
+  plugins: [require("tailwindcss-fluid-type")]
 };

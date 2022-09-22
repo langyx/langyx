@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Forfait Conseil",
+        "price": "10€",
+        "priceUnit": "/mois",
+        "description": "Fonctionne parfaitement pour la plupart des personnes qui ont besoin de conseils et d'orientations. Vous profitez du réseau Swift France.",
+        "features": [
+            "Questions/Réponses illimitées via messages",
+            "Réponses en 24 heures ou moins",
+            "Tâches et exercices",
+            "Accès au groupe des coachés de la communauté Swift France",
+            "Invitation évènements exclusifs",
+            "Pas de coûts cachés",
+            "Sans engagement"
+        ],
+        "action": "Rejoindre"
+    },
+    {
+        "title": "Forfait Coaching",
+        "price": "50€",
+        "priceUnit": "/mois",
+        "description": "Convient au besoin d'un encadrement en ce qui concerne votre montée en compétence et le développement de vos projets iOS. Inclut des appels individuels à 2.",
+        "features": [
+            "Questions/Réponses illimitées via messages",
+            "Réponses en 24 heures ou moins",
+            "Jusqu'à 3 appels par mois",
+            "Tâches et exercices",
+            "Gestion des tâches pour suivre les progrès et les projets",
+            "Accès au groupe des coachés de la communauté Swift France",
+            "Invitation évènements exclusifs",
+            "Pas de coûts cachés",
+            "Sans engagement"
+        ],
+        "action": "Rejoindre",
+        "accent": true
+    },
+    {
+        "title": "Forfait Mentoring",
+        "price": "100€",
+        "priceUnit": "/mois",
+        "description": "Convient au besoin d'une relation de proximitié permettant un encendrament et un support régulier dans le développement de votre carrière et de vos projets. Inclut des échanges par appel sans limite.",
+        "features": [
+            "Questions/Réponses illimitées via messages",
+            "Réponses en 24 heures ou moins",
+            "Appels réguliers",
+            "Tâches et exercices",
+            "Gestion des tâches pour suivre les progrès et les projets",
+            "Accès au groupe des coachés de la communauté Swift France",
+            "Invitation évènements exclusifs",
+            "Pas de coûts cachés",
+            "Sans engagement"
+        ],
+        "action": "Rejoindre",
+        "accent": false
+    }
+]
