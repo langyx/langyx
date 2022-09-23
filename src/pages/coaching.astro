@@ -7,10 +7,12 @@ import Sub from "~/components/coaching/sub.astro";
 import "~/styles/index.css";
 
 import Layout from "../layouts/page.astro";
+import Testimonial from "~/components/coaching/testimonial.astro";
 
-const seo = { 
+const seo = {
     title: "Programme de coaching | Expert iOS, Développeur Swift, Formateur",
-    description: "Un accompagnement sur mesure par un expert certifié pour développer vos compétences de développeur iOS."
+    description:
+        "Un accompagnement sur mesure par un expert certifié pour développer vos compétences de développeur iOS.",
 };
 
 const statsFormation = [
@@ -102,4 +104,7 @@ const statsDev = [
 
     <!--Sub -->
     <Sub />
+
+    <!-- Testimonial -->
+    <Testimonial />
 </Layout>
