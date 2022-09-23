@@ -1,0 +1,24 @@
+---
+import Icon from "astro-icon";
+import ContentSection from "../content-section.astro";
+---
+
+<ContentSection
+    title="Programme de coaching"
+    id="intro"
+    class="border border-red-500"
+>
+    <Icon slot="eyebrow" name="logomark" class="h-32" />
+    <Fragment slot="lead">
+        Un accompagnement
+        <span class="text-primary">sur mesure</span>
+        pour développer vos compétences de
+        <span class="text-secondary">développeur iOS</span>.
+    </Fragment>
+    <a
+        class="px-8 py-5 font-semibold rounded bg-offset text-default"
+        href="#program"
+    >
+        Découvrir
+    </a>
+</ContentSection>

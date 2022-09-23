@@ -1,0 +1,23 @@
+---
+import Icon from "astro-icon";
+import ContentSection from "../content-section.astro";
+import StatsList from "./stats-list.astro";
+import whoStats from "../../data/coaching/whoStats.json";
+
+---
+
+<ContentSection title="Qui suis je ?" id="who">
+    <Fragment slot="lead">
+        Formateur <span class="text-primary">certifié par Apple</span> et développeur
+        passioné <span class="text-secondary">expert iOS</span>
+        <a class="text-sm text-right text-primary" href="/#intro">
+            plus...&rarr;
+        </a>
+    </Fragment>
+    <Icon name="certifiedTrainer" class="h-16" />
+    {
+        whoStats.map((section) => (
+        <StatsList title={section.title} data={section.data} />
+        ))
+    }
+</ContentSection>

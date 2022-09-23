@@ -8,99 +8,26 @@ import "~/styles/index.css";
 
 import Layout from "../layouts/page.astro";
 import Testimonial from "~/components/coaching/testimonial.astro";
+import Who from "~/components/coaching/who.astro";
+import Intro from "~/components/coaching/intro.astro";
 
 const seo = {
     title: "Programme de coaching | Expert iOS, Développeur Swift, Formateur",
     description:
         "Un accompagnement sur mesure par un expert certifié pour développer vos compétences de développeur iOS.",
 };
-
-const statsFormation = [
-    {
-        title: "Heures",
-        value: "+3500",
-        icon: "el:time-alt",
-    },
-    {
-        title: "Personnes",
-        value: "+500",
-        icon: "fluent:people-audience-20-filled",
-    },
-    {
-        title: "Sessions",
-        value: "+20",
-        icon: "mdi:projector-screen",
-    },
-    {
-        title: "Projets",
-        value: "+100",
-        icon: "simple-icons:codesandbox",
-    },
-];
-
-const statsDev = [
-    {
-        title: "Applications",
-        value: "+10",
-        icon: "wpf:iphone",
-    },
-    {
-        title: "Packages",
-        value: "+10",
-        icon: "fa-solid:box",
-    },
-    {
-        title: "Années",
-        value: "~10",
-        icon: "fluent:desktop-mac-16-filled",
-    },
-    {
-        title: "Passion",
-        value: "∞",
-        icon: "ant-design:code-filled",
-    },
-];
 ---
 
 <Layout seo={seo}>
     <!-- Intro -->
-    <ContentSection
-        title="Programme de coaching"
-        id="intro"
-        class="border border-red-500"
-    >
-        <Icon slot="eyebrow" name="logomark" class="h-32" />
-        <Fragment slot="lead">
-            Un accompagnement
-            <span class="text-primary">sur mesure</span>
-            pour développer vos compétences de
-            <span class="text-secondary">développeur iOS</span>.
-        </Fragment>
-        <a
-            class="px-8 py-5 font-semibold rounded bg-offset text-default"
-            href="#program"
-        >
-            Découvrir
-        </a>
-    </ContentSection>
+    <Intro />
     <!--  -->
 
     <!-- Programm -->
     <Program />
 
     <!-- Who -->
-    <ContentSection title="Qui suis je ?" id="who">
-        <Fragment slot="lead">
-            Formateur <span class="text-primary">certifié par Apple</span> et développeur
-            passioné <span class="text-secondary">expert iOS</span>
-            <a class="text-sm text-right text-primary" href="/#intro">
-                plus...&rarr;
-            </a>
-        </Fragment>
-        <Icon name="certifiedTrainer" class="h-16" />
-        <StatsList title="Formation" data={statsFormation} />
-        <StatsList title="Développement" data={statsDev} />
-    </ContentSection>
+    <Who />
 
     <!--Sub -->
     <Sub />
