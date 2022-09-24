@@ -1,0 +1,58 @@
+---
+import Icon from "astro-icon";
+---
+<div id="calendar-modal" class="hidden modal" aria-hidden="true">
+    <div class="fixed inset-0 bg-default z-30">
+        <div class="" role="dialog" aria-modal="true">
+            <header class="text-right px-8 py-4">
+                <button
+                    id="close-calendar-button"
+                    type="button"
+                    class="btn"
+                    aria-label="Close navigation"
+                >
+                    <Icon pack="mdi" name="close" class="h-8" />
+                </button>
+            </header>
+            <div
+                class="px-4 calendly-inline-widget"
+                data-url="https://calendly.com/yannis-lang/coaching-intro?hide_gdpr_banner=1"
+                style="min-width:320px;height:660px;"
+            >
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async
+></script>
+
+<script>
+    import MicroModal from "micromodal";
+
+    const calendarModalId = "calendar-modal";
+
+    const openCalendarModalButton = document.querySelector(
+        "#open-calendar-button"
+    );
+    const closeCalendarModalButton = document.querySelector(
+        "#close-calendar-button"
+    );
+
+    const openModal = () => {
+        MicroModal.show(calendarModalId, { disableScroll: true });
+    };
+
+    const closeModal = () => {
+        MicroModal.close(calendarModalId);
+    };
+
+    openCalendarModalButton.addEventListener("click", openModal);
+    closeCalendarModalButton.addEventListener("click", closeModal);
+</script>
+
+<style>
+    .modal.is-open {
+        @apply block;
+    }
+</style>

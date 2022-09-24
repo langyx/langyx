@@ -5,15 +5,14 @@ import Layout from "./Base.astro";
 import type { Props as BaseHeadProps } from "../components/head/BaseHead.astro";
 
 export interface Props {
-    seo?: BaseHeadProps;
+  seo?: BaseHeadProps;
 }
 
 const { seo } = Astro.props as Props;
 ---
 
 <Layout seo={seo}>
-    <slot name="after-header" />
-    <div class="px-8 py-32 space-y-24">
-      <slot />
-    </div>
+  <div class="px-8 py-32 space-y-24">
+    <slot />
+  </div>
 </Layout>

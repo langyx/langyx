@@ -3,6 +3,7 @@ import ContentSection from "../content-section.astro";
 import type { SubOffer } from "./sub-section.astro";
 import SubSection from "./sub-section.astro";
 import subs from "~/data/coaching/sub.json";
+import Calendar from "./calendar.astro";
 ---
 
 <ContentSection title="Ne perdez plus de temps !" id="sub">
@@ -12,9 +13,10 @@ import subs from "~/data/coaching/sub.json";
         </span> avec moi, il est <span class="text-secondary">gratuit.</span>
     </Fragment>
     <button
+        id="open-calendar-button"
         type="button"
         class="relative px-12 py-4 ml-4 overflow-hidden font-semibold rounded bg-offset shadow"
-        onclick=" window.open('https://calendly.com/yannis-lang/coaching-intro','_blank')"
+        
     >
         <p class="hover:text-primary">Réserver un créneau</p>
         <p class="text-xs text-offset hover:text-secondary">
@@ -55,3 +57,5 @@ import subs from "~/data/coaching/sub.json";
         </div>
     </section>
 </ContentSection>
+
+<Calendar />
