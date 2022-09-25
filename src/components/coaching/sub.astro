@@ -4,6 +4,7 @@ import type { SubOffer } from "./sub-section.astro";
 import SubSection from "./sub-section.astro";
 import subs from "~/data/coaching/sub.json";
 import Calendar from "./calendar.astro";
+import Icon from "astro-icon";
 ---
 
 <ContentSection title="Ne perdez plus de temps !" id="sub">
@@ -16,7 +17,6 @@ import Calendar from "./calendar.astro";
         id="open-calendar-button"
         type="button"
         class="relative px-12 py-4 ml-4 overflow-hidden font-semibold rounded bg-offset shadow"
-        
     >
         <p class="hover:text-primary">Réserver un créneau</p>
         <p class="text-xs text-offset hover:text-secondary">
@@ -27,15 +27,53 @@ import Calendar from "./calendar.astro";
             >Gratuit
         </span>
     </button>
-    <section class="py-10 bg-offset rounded shadow-xl">
+    <section class="py-10 bg-offset rounded shadow-xl h-full">
         <div class="container px-10 mx-auto">
-            <div class="max-w-2xl mx-auto mb-16 text-center">
+            <div class="max-w-2xl mx-auto text-center mb-8">
                 <span class="font-bold tracking-wider uppercase text-secondary"
                     >Prix
                 </span>
                 <h2 class="text-lm font-bold lg:text-xl">
                     Choisissez le meilleur programme
                 </h2>
+            </div>
+            <div
+                class="mb-8 bg-default rounded p-6 flex flex-col space-y-4 shadow"
+            >
+                <div class="flex">
+                    <div class="flex items-center">
+                        <Icon class="h-4" name="bi:check-lg" />
+                    </div>
+                    <p class="ml-4 text-sm">
+                        <span class="text-secondary"
+                            >5 séances de coaching
+                        </span> coûtent plus de <span class="text-secondary"
+                            >500€
+                        </span>: c'est + de
+                        <span class="text-primary"
+                            >3 mois de coaching "Mentoring"
+                        </span> avec autant de séances que nécessaires.
+                    </p>
+                </div>
+                <div class="flex">
+                    <div class="flex items-center">
+                        <Icon class="h-4" name="bi:check-lg" />
+                    </div>
+                    <p class="ml-4 text-sm">
+                        <span class="text-secondary"
+                            >5 jours de formation
+                        </span>sur les bases du développement iOS coûte en
+                        moyenne <span class="text-secondary">2250€</span>: c'est
+                        + de <span class="text-primary"
+                            >15 mois de coaching "Mentoring"
+                        </span>.
+                    </p>
+                </div>
+                <p class="text-sm ml-4">
+                    Peut importe le forfait que vous choisissez, vous vous
+                    formez et êtes accompagné par un expert selon vos conditions
+                    et vos objectifs !
+                </p>
             </div>
             <div class="flex flex-wrap items-stretch -mx-4">
                 {subs.map((sub) => <SubSection offer={sub} />)}
@@ -47,12 +85,12 @@ import Calendar from "./calendar.astro";
                 <h2 class="pb-10 text-lm font-bold lg:text-xl">
                     Entreprises et besoins spécifiques
                 </h2>
-                <button
-                    type="button"
-                    class="relative px-12 py-4 ml-4 overflow-hidden font-semibold rounded bg-primary shadow"
+                <a
+                    class="relative px-12 py-4 ml-4 overflow-hidden font-semibold rounded bg-primary shadow hover:text-offset"
+                    href="#contact"
                 >
-                    <p class="hover:text-offset">Contacter</p>
-                </button>
+                    Contacter
+                </a>
             </div>
         </div>
     </section>

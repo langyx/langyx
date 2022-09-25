@@ -7,6 +7,7 @@ export interface SubOffer {
     features: Array<string>;
     action: string;
     accent?: boolean;
+    url: string
 }
 
 export interface Props {
@@ -90,6 +91,7 @@ const buttonClass = {
                 "inline-block px-5 py-3 font-semibold tracking-wider text-center rounded",
                 buttonClass,
             ]}
+             onclick={`window.open('${offer.url}','_blank')`}
             >{offer.action}
         </button>
     </div>
