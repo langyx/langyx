@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Savoir chercher",
+        "value": "Il y a beaucoup de ressources sur internet. Mais commment faire le tri ? Il est important d'apprendre à faire des bonnes recherches et savoir les exploiter pour arriver à ses fins.",
+        "icon": "fluent:calendar-search-16-filled"
+    },
+    {
+        "title": "Se former en autonomie",
+        "value": "Les changements de contexte de travail tel que les stacks techniques sont rapides. Vous devez être dans une posture de formation continue. Un bon développeur va savoir former sont entourage.",
+        "icon": "fa-solid:book"
+    },
+    {
+        "title": "Veille et curiosité",
+        "value": "Faire parti de communautés, participer à des évènements et tout simplement échanger avec des pairs vous permet d'être au courant des bonnes pratiques, languages, technologies et frameworks.",
+        "icon": "fluent:people-community-16-filled"
+    },
+    {
+        "title": "Logique et algorithmie",
+        "value": "Faire le lien entre des besoins métiers et une solution logiciel est crucial pour développer un produit de qualité et évolutif. Votre capacité d'abstraction des problèmes et votre logique algorithmique vous permettent de transcrire les besoins.",
+        "icon": "fluent:brain-circuit-20-filled"
+    },
+    {
+        "title": "Obsession pour la rigueur",
+        "value": "Développer un produit de qualité, maintenable et fiable passe par la rigueure que vous mettrez dans l'écriture d'un code robuste et organisé.",
+        "icon": "ic:sharp-diamond"
+    },
+    {
+        "title": "Expérience",
+        "value": "Rien ne remplacera l'expérience que vous acquérez sur des projets personnels ou professionels. Gagner en automatisme, en fluidité et en autonomie ne peut que venir avec la pratique.",
+        "icon": "ic:round-work"
+    },
+    {
+        "title": "Savoir se vendre",
+        "value": "Vous devez travailler votre présence sur le web et vous distinguer. Certains soft skills vous offrent une aisance à l'oral lors de présentation ou d'entretiens avec des clients et des recruteurs.",
+        "icon": "fa-solid:handshake"
+    },
+    {
+        "title": "Confiance et remise en question",
+        "value": "L'équilibre entre la confiance en ses compétences et une remise en question est important. Cela vous permet d'être dans une posture d'apprentissage et d'amélioration continu.",
+        "icon": "bi:emoji-smile-fill"
+    },
+    {
+        "title": "Optimisation des tâches",
+        "value": "Toutes les activités chronophages doivent, autant que possible, être automatisées pour améliorer la productivité. Vous pouvez développer vos propres solutions d'automatisations ou mettre en place des outils existant.",
+        "icon": "ant-design:setting-filled"
+    }
+]

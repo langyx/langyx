@@ -1,0 +1,32 @@
+---
+import ContentSection from "../content-section.astro";
+import dev from "../../data/coaching/dev.json";
+import Icon from "astro-icon";
+---
+
+<ContentSection title="Les secrets du bon développeur" id="dev">
+    <Fragment slot="lead"
+        >Nous travaillons sur cet état d'esprit lors du coaching.
+    </Fragment>
+    <div class="">
+        <div class="px-8 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <dl
+                class="sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8"
+            >
+                {
+                    dev.map((item) => (
+                        <div class="flex flex-col items-center bg-offset rounded p-4">
+                            <Icon class="h-10 text-primary" name={item.icon} />
+                            <div class="ml-3">
+                                <dt class="text text-center font-medium text-primary">
+                                    {item.title}
+                                </dt>
+                                <dd class="text-sm mt-2">{item.value}</dd>
+                            </div>
+                        </div>
+                    ))
+                }
+            </dl>
+        </div>
+    </div>
+</ContentSection>

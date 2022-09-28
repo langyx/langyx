@@ -5,15 +5,15 @@
         "elements": [
             {
                 "title": "Formation trop rapide, trop lente ?",
-                "description": "Dans ce programme de coaching nous établissons ensemble des objectifs atteignables et réalistes. Nous pouvons adapter le plan d'action, à tout moment, pour qu'il corresponde à vos contraintes de temps et vos besoins."
+                "description": "Dans ce programme de coaching, nous établissons ensemble des objectifs atteignables et réalistes. Nous pouvons adapter le plan d'action, à tout moment, pour qu'il corresponde à vos contraintes de temps et vos besoins."
             },
             {
                 "title": "Devenir développeur iOS,  développer son projet ou chercher l'expertise technique",
-                "description": "Peut importe l'expérience que vous avez déjà, nous définissons un programme pour que vous acquérez les compétences dont vous avez besoins. Le format coaching offre une alternative aux formations, il vous pousse à la quête d'autonomie tout en offrant un suivi continu pour éviter de passer à côté des bonnes méthodes."
+                "description": "Peu importe l'expérience que vous avez déjà, nous définissons un programme pour que vous acquerriez les compétences dont vous avez besoin. Le format coaching offre une alternative aux formations, il vous pousse à la quête d'autonomie tout en offrant un suivi continu pour éviter de passer à côté des bonnes méthodes."
             },
             {
                 "title": "Un expert toujours disponible à vos côtés",
-                "description": "Fort de mon expérience en développement et formation, je vous accompagne pour atteindre vos objectifs. Nous planifierons des appels réguliers pour faire des points sur votre progression et des points techniques. En plus de ces appels, vous pouvez me contacter par message lorsque vous en avez besoin pour obtenir une réponse rapidement."
+                "description": "Fort de mon expérience en développement et en formation, je vous accompagne pour atteindre vos objectifs. Nous planifions des appels réguliers pour faire des bilans sur votre progression et des points techniques. En plus de ces appels, vous pouvez me contacter par message lorsque vous en avez besoin pour obtenir une réponse rapidement."
             }
         ]
     },
@@ -27,11 +27,11 @@
             },
             {
                 "title": "Ne négligez pas les soft skills",
-                "description": "Je vous conseille pour vous distinguez des autres développeurs. Nous travaillons sur les notions de conception, de design UI/UX, votre présence en tant que développeur sur le web. Je vous accompagne pour développer votre posture professionel."
+                "description": "Je vous conseille pour vous distinguez des autres développeurs. Nous travaillons sur les notions de conception, de design UI/UX et de votre présence en tant que développeur sur le web. Je vous accompagne pour développer votre posture professionelle."
             },
             {
-                "title": "Intégrer une communauté et profiter du réseau Swift France",
-                "description": "En intégrant le programme du coaching vous intégrez un groupe de personnes déterminés à réussir. Vous serez ainsi invité à des échanges de groupes et des événements. En plus de ça, vous pourrez également profiter d'opportunités professionelles pour propulser votre carrière."
+                "title": "Vous intégrez une communauté et profitez du réseau Swift France",
+                "description": "En rejoignant le programme du coaching vous intégrez un groupe de personnes déterminés à réussir. Vous serez ainsi invité à des échanges et des événements. Vous profitez d'opportunités professionelles pour propulser votre carrière."
             }
         ]
     }

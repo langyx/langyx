@@ -7,16 +7,19 @@ import program from "~/data/coaching/program.json";
 
 <ContentSection title="Pourquoi ce programme ?" id="program">
     <Fragment slot="lead"
-        >Devenir <span class="text-primary">développeur iOS</span>, être <span
+        >Devenir <span class="text-primary">développeur iOS</span>,<br> être <span
             class="text-secondary"
             >accompagné
-        </span> sur un projet, besoin d'une expertise technique ?
+        </span>sur un projet, besoin d'une expertise technique ?
+        <br>
+        <br>
+        Avant de vous donner <span class="text-secondary">les secrets</span> qui feront de vous un <span class="text-primary">bon développeur</span>, je vous parle du programme.
     </Fragment>
     <section class="bg-offset rounded">
         <div
             class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-6xl"
         >
-            {
+          {
                 program.map((data, index) => (
                     <ProgramSection data={data} left={index % 2 != 0} />
                 ))
