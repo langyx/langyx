@@ -6,12 +6,12 @@ import Icon from "astro-icon";
 
 <ContentSection title="Les secrets du bon développeur" id="dev">
     <Fragment slot="lead"
-        >Nous travaillons sur cet état d'esprit lors du coaching.
+        >Nous travaillons sur cet <span class="text-primary">état d'esprit</span> lors du <span class="text-secondary">coaching</span>.
     </Fragment>
     <div class="">
         <div class="px-8 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <dl
-                class="sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-8"
+                class="grid gap-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-8 lg:grid-cols-3 lg:gap-x-8"
             >
                 {
                     dev.map((item) => (

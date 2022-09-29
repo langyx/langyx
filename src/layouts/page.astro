@@ -3,15 +3,17 @@ import "~/styles/index.css";
 
 import Layout from "./Base.astro";
 import type { Props as BaseHeadProps } from "../components/head/BaseHead.astro";
+import type { NavItem } from "~/components/header.astro";
 
 export interface Props {
   seo?: BaseHeadProps;
+  nav?: Array<NavItem>;
 }
 
-const { seo } = Astro.props as Props;
+const { seo, nav } = Astro.props as Props;
 ---
 
-<Layout seo={seo}>
+<Layout seo={seo} nav={nav}>
   <div class="px-8 py-32 space-y-24">
     <slot />
   </div>

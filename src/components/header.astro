@@ -2,6 +2,11 @@
 import { Icon } from "astro-icon";
 import ThemeSwitcher from "~/components/theme-switcher.astro";
 
+export interface NavItem {
+  title: string;
+  url: string;
+}
+
 const navItems = [
   { title: "Activités", url: "/#activities" },
   { title: "Technologies", url: "/#technologies" },
@@ -11,9 +16,14 @@ const navItems = [
 
 export interface Props {
   isTop?: boolean;
+  nav?: Array<NavItem>;
 }
 
-const { isTop = false } = Astro.props;
+var { isTop = false, nav } = Astro.props;
+
+if (nav == undefined) {
+  nav = navItems;
+}
 ---
 
 <header
@@ -23,7 +33,7 @@ const { isTop = false } = Astro.props;
     { "fixed-header": isTop, "isTop-fixed-header": isTop },
   ]}
 >
-  <a class="flex items-center gap-3 hover:!text-default" href="#">
+  <a class="flex items-center gap-3 hover:!text-default" href="/">
     <h1 class="sr-only">Yannis Lang</h1>
     <Icon name="logomark" class="h-10" />
     <Icon name="wordmark" class="hidden h-4 sm:block" />
@@ -33,7 +43,7 @@ const { isTop = false } = Astro.props;
       <nav class="hidden sm:block">
         <ul class="flex items-center gap-6">
           {
-            navItems.map(({ title, url }) => (
+            nav.map(({ title, url }) => (
               <li>
                 <a class="text-sm" href={url}>
                   {title}
@@ -110,14 +120,12 @@ const { isTop = false } = Astro.props;
   openNavButton.addEventListener("click", openMenu);
   closeNavButton.addEventListener("click", closeMenu);
 
-
   if (!header.classList.contains("fixed-header")) {
     document.addEventListener("scroll", () => {
-    const d = page.clientHeight - page.scrollTop - header.offsetHeight;
-    header.classList.toggle("fixed-header", d < 0);
-  });
+      const d = page.clientHeight - page.scrollTop - header.offsetHeight;
+      header.classList.toggle("fixed-header", d < 0);
+    });
   }
-  
 
   menu.addEventListener("click", (event) => {
     if ((event.target as HTMLElement).tagName === "A") {
