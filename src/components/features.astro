@@ -17,27 +17,37 @@ const features = [
   },
   {
     title: "Accompagnement",
-    description: "Mission de consulting: expertise iOS Swift/SwiftUI\nCoaching et mentoring sur mesure en fonction des objetcifs.",
-      icon: "bi:people-fill",
+    description:
+      "Mission de consulting: expertise iOS Swift/SwiftUI\nCoaching et mentoring sur mesure en fonction des objetcifs.",
+    icon: "bi:people-fill",
   },
 ];
 ---
 
 <ContentSection title="Activités" id="activities">
   <Fragment slot="lead">
-    Spécialisé dans le développement d'<span class="text-primary">applications iOS</span> sécurisées, <span class="text-secondary">robustes et maintenables</span>.
+    Spécialisé dans le développement d'<span class="text-primary"
+      >applications iOS
+    </span> sécurisées, <span class="text-secondary"
+      >robustes et maintenables
+    </span>.
   </Fragment>
-  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     {
       features.map(({ title, description, icon }) => (
-        <li class="flex flex-col items-center gap-4 p-6 border border-default bg-offset">
+        <li class="flex flex-col items-center gap-4 p-6 border border-default bg-offset rounded">
           <div class="w-16 h-16 p-3 border-2 border-current rounded-full">
             <Icon name={icon} />
           </div>
           <p class="text-xl font-extrabold text-center">{title}</p>
-          <p class="text-sm text-center text-offset whitespace-pre-line">{description}</p>
+          <p class="text-sm text-center text-offset whitespace-pre-line">
+            {description}
+          </p>
         </li>
       ))
     }
   </ul>
+  <a class="text-sm text-right text-primary" href="/coaching">
+    Découvrir le programme de coaching &rarr;
+  </a>
 </ContentSection>

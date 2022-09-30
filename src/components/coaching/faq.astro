@@ -1,0 +1,30 @@
+---
+import ContentSection from "../content-section.astro";
+import faq from "../../data/coaching/faq.json";
+---
+
+<ContentSection title="Questions fréquemment posées" id="faq">
+    <Fragment slot="lead"
+        >Pour toute autres questions, <a class="text-primary" href="#contact"
+            >contactez moi
+        </a>.
+    </Fragment>
+    <section class="w-full flex flex-col justify-center max-w-xl lg:max-w-5xl">
+        <div
+            class="w-full flex justify-start flex-col divide-y divide-gray-700 bg-offset p-6 rounded shadow gap-y-6"
+        >
+            {
+                faq.map((item) => (
+                    <details>
+                        <summary class="py-2 outline-none cursor-pointer focus:underline">
+                            {item.question}
+                        </summary>
+                        <div class="px-4 pb-4 text-gray-400">
+                            <p class="break-words whitespace-normal" set:html={item.answer}/>
+                        </div>
+                    </details>
+                ))
+            }
+        </div>
+    </section>
+</ContentSection>

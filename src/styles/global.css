@@ -10,3 +10,7 @@ a,
   @apply text-transparent bg-clip-text;
   @apply bg-gradient-to-br from-blue-700 via-indigo-400 to-purple-500;
 }
+
+summary::marker, summary::-webkit-details-marker {
+  @apply text-primary;
+}

@@ -1,0 +1,98 @@
+---
+import { generateImage } from "astro-eleventy-img";
+
+const { data, left } = Astro.props;
+const { title, image, elements } = data;
+
+const myImage = generateImage(image, {
+    // The options here are passed directly to eleventy-img
+    heights: [360],
+    formats: ["webp", "avif"],
+});
+---
+
+<div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+    <div
+        aria-hidden="true"
+        class:list={[
+            "mt-10 lg:mt-0 md:inline-block",
+            {
+                "xl:hidden": !left,
+            },
+        ]}
+    >
+        <img
+            src={myImage.webp[0].url}
+            class="mx-auto rounded shadow-lg dark:bg-gray-500"
+        />
+    </div>
+
+    <div>
+        <div class="mt-12 space-y-12">
+            {
+                elements.map(({ title, description }) => (
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div
+                                class:list={[
+                                    "flex items-center justify-center w-12 h-12 rounded-md bg-default ",
+                                    {
+                                        "text-primary": !left,
+                                        "text-secondary": left,
+                                    },
+                                ]}
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    class="w-7 h-7"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="ml-4">
+                            <h4
+                                class:list={[
+                                    "text font-medium leading-6",
+                                    {
+                                        "text-primary": !left,
+                                        "text-secondary": left,
+                                    },
+                                ]}
+                            >
+                                {title}
+                            </h4>
+                            <p class="mt-2 text-sm text-justify">
+                                {description}
+                            </p>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+    <div
+        aria-hidden="true"
+        class:list={[
+            "mt-10 lg:mt-0 hidden",
+            {
+                "xl:inline-block": !left,
+                "xl:hidden": left,
+            },
+        ]}
+    >
+        <img
+            src={myImage.webp[0].url}
+            class="mx-auto rounded shadow-lg dark:bg-gray-500"
+        />
+    </div>
+</div>
