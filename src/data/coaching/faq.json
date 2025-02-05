@@ -1,0 +1,22 @@
+[
+    {
+        "question": "Je trouve que le coaching coûte cher.",
+        "answer": "Le programme de coaching est une offre riche et accessible à tout le monde dont la valeur est inestimable. C'est un investissement sur vous-même sans risque que vous rentabilisez dés vos premiers jours en tant que développeur ou sur les ventes de votre produit. <br><span class=\"text-secondary\">5 jours de formation</span> sur les bases du développement iOS coûtent en moyenne <span class=\"text-secondary\">2500€</span>: c'est <span class=\"text-primary\">10 mois de \"Formule Standard\"</span>."
+    },
+    {
+        "question": "Avec qui se déroulent le coaching et les appels ? Y a-t-il d'autres formateurs ?",
+        "answer": "L'ensemble du coaching ainsi que les appels se déroulent avec moi-même. Je suis le seul formateur à travailler sur ce programme."
+    },
+    {
+        "question": "Y a-t-il un engagement sur l'abonnement de coaching ? Comment puis je l'annuler ?",
+        "answer": "Il n'y aucun engagement sur l'abonnement. Vous pouvez l'annuler ou le modifier à tout moment, très simplement, depuis le portail client : https://billing.stripe.com/p/login/dR616Sfhn4q19Gw6oo."
+    },
+    {
+        "question": "Combien de temps dure le coaching ?",
+        "answer":  "C'est à vous de le définir ! Contrairement à une formation, le programme de coaching est évolutif et s'adapte à vos besoins. Tant que vous en avez besoin, vous pouvez adhérer au programme de coaching."
+    },
+    {
+        "question": "Qui suis-je ? Quel est mon statut juridique ?",
+        "answer": "Je suis un autoentrepreneur (SIRET 832 394 191 00023) dont l'activité de formation est enregistrée auprès de la Direction régionale de l'économie, de l'emploi, du travail et des solidarités."
+    }
+]

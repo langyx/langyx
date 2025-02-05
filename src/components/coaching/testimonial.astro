@@ -1,0 +1,32 @@
+---
+import ContentSection from "../content-section.astro";
+import testimonials from "../../data/coaching/testimonial.json";
+import Icon from "astro-icon";
+---
+
+<ContentSection title="Témoignages" id="testimonial">
+    <div class="container px-6 mx-auto">
+        <div class="grid items-center gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {
+                testimonials.map((testimonial) => (
+                    <div class="p-6 rounded shadow-md bg-offset">
+                        <p class="text-sm">
+                           {testimonial.message}
+                        </p>
+                        <div class="flex items-center mt-4 space-x-4">
+                            <Icon class="h-14 w-14 rounded-full bg-tertiary text-primary px-2" name="bi:person-fill" />
+                            <div>
+                                <p class="text font-semibold text-primary">
+                                    {testimonial.name}
+                                </p>
+                                <p class="text-sm dark:text-gray-400">
+                                    {testimonial.role}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</ContentSection>

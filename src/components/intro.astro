@@ -1,0 +1,30 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="Yannis Lang" id="intro">
+  <Icon slot="eyebrow" name="logomark" class="h-32" />
+  <Fragment slot="lead">
+    Développeur
+    <span class="text-primary">passionné</span> et formateur
+    <span class="text-secondary">certifié</span>
+    par Apple dans le développement d’applications avec Swift.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="cv.pdf"
+      class="flex items-center justify-center gap-3 px-6 py-6 font-semibold rounded bg-primary text-tertiary shadow"
+    >
+      <Icon pack="mdi" name="file-account" class="h-8" />
+      <span>Parcours</span>
+    </a>
+    <a
+      href="https://github.com/langyx/"
+      class="flex items-center justify-center gap-3 px-6 py-6 font-semibold rounded bg-secondary text-tertiary hover:text-primary shadow"
+    >
+      <Icon pack="mdi" name="github" class="h-8" />
+      <span>Github</span>
+    </a>
+  </div>
+</ContentSection>

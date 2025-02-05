@@ -1,0 +1,28 @@
+---
+import "~/styles/index.css";
+
+import Footer from "~/components/footer.astro";
+
+import BaseHead from "../components/head/baseHead.astro";
+import Header from "../components/header.astro";
+import type { Props as BaseHeadProps } from "../components/head/baseHead.astro";
+import type { NavItem } from "~/components/header.astro";
+export interface Props {
+  seo?: BaseHeadProps;
+  nav?: Array<NavItem>;
+}
+const { seo, nav } = Astro.props;
+---
+
+<html lang="fr" class="h-full motion-safe:scroll-smooth">
+  <head>
+    <BaseHead {...seo} />
+  </head>
+  <body
+    class="h-full overflow-x-hidden text-base bg-default text-default selection:bg-secondary selection:text-white"
+  >
+    <Header isTop={true} nav={nav} />
+    <slot />
+    <Footer />
+  </body>
+</html>

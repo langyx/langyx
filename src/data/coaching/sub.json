@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Formule lite",
+        "price": "100€",
+        "priceUnit": "/mois",
+        "description": "Convient au besoin d'un encadrement en ce qui concerne votre montée en compétence et le développement de vos projets iOS.",
+        "features": [
+            "Questions/Réponses illimitées via messages",
+            "Réponse en 24 heures",
+            "Plan de formation",
+            "Assistance projet"
+        ],
+        "action": "Rejoindre",
+        "url": "https://buy.stripe.com/bIY4gUcyRcPM5HicMQ"
+    },
+    {
+        "title": "Formule Standard",
+        "price": "250€",
+        "priceUnit": "/mois",
+        "description": "Convient au besoin d'une relation de proximitié permettant un encendrament et un support régulier dans le développement de votre carrière et de vos projets. Inclus des appels individuels à 2.",
+        "features": [
+            "Questions/Réponses illimitées via messages",
+            "Réponse en 24 heures",
+            "2 appels de 45 minutes par mois",
+            "Plan de formation",
+            "Assistance projet",
+            "Suivi"
+        ],
+        "action": "Rejoindre",
+        "accent": true,
+        "url": "https://buy.stripe.com/00g4gU2Yh3fcfhS5kp"
+    },
+    {
+        "title": "Séance ponctuelle",
+        "price": "85€",
+        "priceUnit": "/heure",
+        "description": "Accompagnement personnalisé d'un expert, offrant un soutien sur mesure pour votre formation et vos besoins de développement.",
+        "features": [
+            "Plan de formation",
+            "Review",
+            "Pair coding",
+            "Consultation expertise",
+            "Sur-mesure"
+        ],
+        "action": "Planifier",
+        "accent": false,
+        "url": "https://buy.stripe.com/aEU9BedCV3fc1r228e"
+    }
+]

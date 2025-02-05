@@ -1,0 +1,65 @@
+---
+---
+
+<section id="contact" class="py-6 mt-6 scroll-mt-24">
+    <div
+        class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x"
+    >
+        <div class="py-6 md:py-0 md:px-6">
+            <h1
+                class="text-4xl font-bold tracking-tight text-center gradient-text py-1"
+            >
+                Contact
+            </h1>
+            <p class="pt-2 pb-4"></p>
+            <div class="space-y-4">
+                <p class="flex items-center">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="w-5 h-5 mr-2 sm:mr-6"
+                    >
+                        <path
+                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                        ></path>
+                        <path
+                            d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                        ></path>
+                    </svg>
+                    <span>contact@langy.fr</span>
+                </p>
+            </div>
+        </div>
+        <form
+            novalidate=""
+            action="mailto:contact@langy.fr"
+            method="GET"
+            class="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
+        >
+            <label class="block">
+                <span class="mb-1">Sujet</span>
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Programme de coaching"
+                    class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-primary bg-offset"
+                />
+            </label>
+            <label class="block">
+                <span class="mb-1">Message</span>
+                <textarea
+                    name="body"
+                    rows="3"
+                    placeholder="J'aimerai savoir si il était possible de ..."
+                    class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-primary bg-offset"
+                ></textarea>
+            </label>
+            <input
+                type="submit"
+                value="Envoyer"
+                class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 text-tertiary bg-primary focus:ring-primary hover:ring-primary"
+            />
+        </form>
+    </div>
+</section>

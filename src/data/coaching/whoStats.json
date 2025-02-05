@@ -1,0 +1,52 @@
+[
+    {
+        "title": "FORMATION",
+        "data": [
+            {
+                "title": "Heures",
+                "value": "+3500",
+                "icon": "el:time-alt"
+            },
+            {
+                "title": "Personnes",
+                "value": "+500",
+                "icon": "fluent:people-audience-20-filled"
+            },
+            {
+                "title": "Sessions",
+                "value": "+20",
+                "icon": "mdi:projector-screen"
+            },
+            {
+                "title": "Projets",
+                "value": "+100",
+                "icon": "simple-icons:codesandbox"
+            }
+        ]
+    },
+    {
+        "title": "DÉVELOPPEMENT",
+        "data": [
+            {
+                "title": "Applications",
+                "value": "+10",
+                "icon": "wpf:iphone"
+            },
+            {
+                "title": "Packages",
+                "value": "+10",
+                "icon": "fa-solid:box"
+            },
+            {
+                "title": "Années",
+                "value": "10",
+                "icon": "fluent:desktop-mac-16-filled"
+            },
+            {
+                "title": "Passion",
+                "value": "∞",
+                "icon": "ant-design:code-filled"
+            }
+        ]
+    }
+]

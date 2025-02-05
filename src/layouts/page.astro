@@ -1,0 +1,20 @@
+---
+import "~/styles/index.css";
+
+import Layout from "./base.astro";
+import type { Props as BaseHeadProps } from "../components/head/baseHead.astro";
+import type { NavItem } from "~/components/header.astro";
+
+export interface Props {
+  seo?: BaseHeadProps;
+  nav?: Array<NavItem>;
+}
+
+const { seo, nav } = Astro.props as Props;
+---
+
+<Layout seo={seo} nav={nav}>
+  <div class="px-8 py-32 space-y-24">
+    <slot />
+  </div>
+</Layout>
